@@ -1,0 +1,30 @@
+{
+  "name": "antigravity-termux",
+  "version": "1.0.6",
+  "description": "Official Antigravity CLI bridge for Termux (Glibc Bridge via Ubuntu proot)",
+  "main": "index.js",
+  "bin": {
+    "antigravity-termux-install": "./install-agy.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javedahmed82/antigravity-termux.git"
+  },
+  "keywords": [
+    "antigravity",
+    "termux",
+    "gemini",
+    "cli",
+    "ubuntu",
+    "proot"
+  ],
+  "author": "javedahmed82",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javedahmed82/antigravity-termux/issues"
+  },
+  "homepage": "https://github.com/javedahmed82/antigravity-termux#readme"
+}
