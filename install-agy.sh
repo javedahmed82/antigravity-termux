@@ -16,7 +16,8 @@ pkg install -y proot-distro curl tar coreutils
 
 # 2. Setup Ubuntu proot if not exists
 echo "🔍 Checking for Ubuntu proot environment..."
-if proot-distro list 2>&1 | grep -q "ubuntu"; then
+# Check both via proot-distro list and the filesystem for robustness
+if proot-distro list | grep -iq "ubuntu" || [ -d "$PREFIX/var/lib/proot-distro/containers/ubuntu" ]; then
     echo "✅ Ubuntu proot already installed. Skipping installation."
 else
     echo "🐧 Installing Ubuntu proot environment (this may take a while)..."
