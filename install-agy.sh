@@ -25,9 +25,9 @@ else
 fi
 
 # 3. Download and Install agy inside Ubuntu
-echo "📥 Downloading Antigravity CLI binary inside Ubuntu..."
-# We run the official installer inside the proot environment
-proot-distro login ubuntu -- bash -c "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+echo "📥 Setting up certificates and downloading Antigravity CLI..."
+# We install ca-certificates and update them to prevent TLS verification errors
+proot-distro login ubuntu -- bash -c "apt update && apt install -y ca-certificates && update-ca-certificates --fresh && curl -fsSL https://antigravity.google/cli/install.sh | bash"
 
 # 4. Create the Termux Wrapper
 echo "🛠 Creating Termux bridge wrapper..."
