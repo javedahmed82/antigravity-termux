@@ -12,7 +12,7 @@ Official Antigravity CLI (`agy`) binary is built for standard Linux (glibc), whi
 Run this command in your Termux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/javedahmed82/antigravity-termux/main/install-agy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/javedahmed82/antigravity-termux/master/install-agy.sh | bash
 ```
 
 *(Note: Replace `javedahmed82` with your GitHub username after pushing)*
